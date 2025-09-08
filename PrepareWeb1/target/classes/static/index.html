@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Point Area Check</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Гладышев Иван Станиславович, P3213, 465544</h1>
+    <table class="layout-table">
+        <tr>
+            <td class="form-container">
+                <form id="pointForm">
+                    <div class="form-group">
+                        <label for="x">Координата X:</label>
+                        <select id="x" name="x" required>
+                            <option value="" disabled selected>Выберите X</option>
+                            <option value="-3">-3</option>
+                            <option value="-2">-2</option>
+                            <option value="-1">-1</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="y">Координата Y:</label>
+                        <input type="text" id="y" name="y" required
+                               placeholder="от -3 до 3"
+                               pattern="-?[0-9]+(\.[0-9]+)?"
+                               title="Число от -3 до 3">
+                        <div class="hint">Число от -3 до 3</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Радиус R:</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="r" value="1"> 1
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="r" value="1.5"> 1.5
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="r" value="2"> 2
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="r" value="2.5"> 2.5
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="r" value="3"> 3
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit">Проверить</button>
+                </form>
+            </td>
+            <td class="graph-container">
+                <h2>Область попадания</h2>
+                <div class="graph">
+                    <canvas id="areaGraph" width="450" height="450"></canvas>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <div id="errorMessage" class="error" style="display: none;"></div>
+
+    <div id="results">
+        <h2>Результаты</h2>
+        <table id="resultsTable">
+            <thead>
+            <tr>
+                <th>X</th>
+                <th>Y</th>
+                <th>R</th>
+                <th>Результат</th>
+                <th>Время запроса</th>
+            </tr>
+            </thead>
+            <tbody id="resultsBody">
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
