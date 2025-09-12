@@ -1,0 +1,268 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container > h1 {
+    font-family: serif;
+    color: #003366;
+    font-size: 1.4em;
+    text-align: center;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+.form-group {
+    margin: 15px 0;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: white;
+    overflow-x: auto;
+    white-space: pre;
+    text-overflow: clip;
+}
+
+select {
+    padding: 8px;
+    width: 220px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: white;
+}
+
+.hint {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.checkbox-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+button {
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0088b3 !important;
+}
+
+input:invalid {
+    border-color: #dc3545;
+}
+
+input:valid {
+    border-color: #28a745;
+}
+
+.graph-container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.graph {
+    background: #f8f9fa;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    background: white;
+    border: 1px solid #ccc;
+}
+
+#results {
+    margin-top: 30px;
+    overflow-x: auto;
+}
+
+#resultsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+#resultsTable th,
+#resultsTable td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+#resultsTable th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+#resultsTable th:nth-child(1),
+#resultsTable td:nth-child(1) {
+    width: 15%;
+}
+
+#resultsTable th:nth-child(2),
+#resultsTable td:nth-child(2) {
+    width: 20%;
+    min-width: 80px;
+}
+
+#resultsTable th:nth-child(3),
+#resultsTable td:nth-child(3) {
+    width: 15%;
+}
+
+#resultsTable th:nth-child(4),
+#resultsTable td:nth-child(4) {
+    width: 15%;
+}
+
+#resultsTable th:nth-child(5),
+#resultsTable td:nth-child(5) {
+    width: 35%;
+}
+
+#resultsTable .hit {
+    background-color: #d4edda;
+}
+
+#resultsTable .miss {
+    background-color: #f8d7da;
+}
+
+#resultsTable td {
+    white-space: normal;
+    overflow: visible;
+}
+
+#resultsTable th,
+#resultsTable td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+#resultsTable th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+
+#resultsTable th:nth-child(1),
+#resultsTable td:nth-child(1) {
+    width: 15%;
+}
+
+#resultsTable th:nth-child(2),
+#resultsTable td:nth-child(2) {
+    width: 20%;
+    min-width: 80px;
+}
+
+#resultsTable th:nth-child(3),
+#resultsTable td:nth-child(3) {
+    width: 15%;
+}
+
+#resultsTable th:nth-child(4),
+#resultsTable td:nth-child(4) {
+    width: 15%;
+}
+
+#resultsTable th:nth-child(5),
+#resultsTable td:nth-child(5) {
+    width: 35%;
+}
+
+#resultsTable .hit {
+    background-color: #d4edda;
+}
+
+#resultsTable .miss {
+    background-color: #f8d7da;
+}
+
+#resultsTable .error {
+    background-color: #b8a7da;
+}
+
+#resultsTable td {
+    white-space: normal;
+    overflow: visible;
+}
+
+#error-message,
+#errorMessage {
+    color: #dc3545;
+    margin: 10px 0;
+    padding: 10px;
+    background: #f8d7da;
+    border-radius: 4px;
+    display: none;
+}
+
+.layout-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.layout-table td {
+    vertical-align: top;
+    padding: 10px;
+}
+
+#results > table {
+    margin: 20px auto;
+    border: 2px solid #007bff;
+}
