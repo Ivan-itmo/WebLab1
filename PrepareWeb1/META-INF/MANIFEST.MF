@@ -1,6 +1,0 @@
-Manifest-Version: 1.0
-Created-By: Maven JAR Plugin 3.3.0
-Build-Jdk-Spec: 17
-Class-Path: fastcgi-lib-1.0.jar
-Main-Class: mains.Main
-
